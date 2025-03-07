@@ -29,7 +29,7 @@
 
 `docker run -ti -p 8000:80 --name containers04 ubuntu bash`
 
-*Эта команда нициализирует контейнер Ubuntu с именем containers04, открывает bash и связывает порты 8000 и 80.*
+*Эта команда инициализирует контейнер Ubuntu с именем containers04, открывает bash и связывает порты 8000 и 80.*
 
 ![image](img/docker%20run.jpg)
 
@@ -59,23 +59,16 @@ service apache2 start
 ![image](img/localhost.jpg)
 
 4. Выполняю следующие команды:
-```
-ls -l /var/www/html/
-echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
-```
+5. 
 *`ls -l /var/www/html/` Показывает список файлов в каталоге /var/www/html/ с подробной информацией (права доступа, владельцы, размер и дата модификации).*
 
-*`echo '<h1>Hello, World!</h1>' > /var/www/html/index.html` Создаёт файл index.html в данном каталоге с содержимым <h1>Hello, World!</h1>.*
+*`echo '<h1>Hello, World!</h1>' > /var/www/html/index.html` Создаёт файл index.html в данном каталоге с содержимым Hello, World!.*
 
 
 5. Обновляю страницу в браузере:
 ![image](img/hello%20world.jpg)
 
 6. Выполняю следующие команды:
-```
-cd /etc/apache2/sites-enabled/
-cat 000-default.conf
-```
 
 *`cd /etc/apache2/sites-enabled/` Переходит в каталог /etc/apache2/sites-enabled/, где хранятся активированные конфигурации сайтов для Apache2.*
 
@@ -90,16 +83,13 @@ cat 000-default.conf
 
 `docker ps -a`
 
-*показывает список всех контейнеров, включая запущенные и остановленные.*
 ![image](img/docker%20ps%20-a.jpg)
 
 9. Удаляю контейнер:
 
 `docker rm containers04`
 
-*Команда удаляет контейнер с именем containers04 из системы.*
-
-[image](img/docker%20rm.jpg)
+![image](img/docker%20rm.jpg)
 
 ## Выводы
 
