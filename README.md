@@ -98,6 +98,7 @@ cat 000-default.conf
 `docker rm containers04`
 
 *Команда удаляет контейнер с именем containers04 из системы.*
+
 [image](img/docker%20rm.jpg)
 
 ## Выводы
